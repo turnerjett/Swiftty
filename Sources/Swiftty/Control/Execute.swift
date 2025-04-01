@@ -87,21 +87,21 @@ public enum ControlCode: UInt8, Equatable, Sendable {
 
     // C1 Control Codes (Non-exhaustive)
     /// Index
-    case ind = 0x84
+    case ind = 68  // 'D'
     /// Next Line
-    case nel = 0x85
+    case nel = 69  // 'E'
     /// Horizontal Tab Set
-    case hts = 0x88
+    case hts = 72  // 'H'
     /// Device Control String
-    case dcs = 0x50
+    case dcs = 80  // 'P'
     /// Control Sequence Introducer
-    case csi = 0x5B
+    case csi = 91  // '['
     /// String Terminator
-    case st = 0x5C
+    case st = 92  // '\'
     /// Operating System Command
-    case osc = 0x5D
+    case osc = 93  // ']'
     /// Privacy Message
-    case pm = 0x5E
+    case pm = 94  // '^'
     /// Application Program Command
-    case apc = 0x5F
+    case apc = 95  // '_'
 }
